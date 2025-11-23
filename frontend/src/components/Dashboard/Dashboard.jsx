@@ -79,7 +79,7 @@ function Dashboard() {
   };
 
   const clickjoinBtn =()=>{
-    navigate("/assignEmployeeToTeam", {replace:true})
+    navigate("/assignEmployeeToTeamForm", {replace:true})
   }
 
   return (

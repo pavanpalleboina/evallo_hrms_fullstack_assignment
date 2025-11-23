@@ -275,6 +275,30 @@ app.post('/employeeteams', async (req, res) => {
   }
 });
 
+// Unassign employee from team - delete entry by employee_id and team_id
+app.delete('/employeeteams', async (req, res) => {
+  const { employee_id, team_id } = req.body;
+  if (!employee_id || !team_id) {
+    return res.status(400).json({ error: 'employee_id and team_id are required' });
+  }
+
+  try {
+    const [result] = await pool.query(
+      'DELETE FROM EmployeeTeams WHERE employee_id = ? AND team_id = ?',
+      [employee_id, team_id]
+    );
+
+    if (result.affectedRows === 0) {
+      return res.status(404).json({ error: 'Assignment not found' });
+    }
+
+    res.json({ message: 'Employee unassigned from team successfully' });
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+});
+
+
 
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);

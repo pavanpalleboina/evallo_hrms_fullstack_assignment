@@ -8,7 +8,8 @@ import TeamForm from './components/TeamForm/TeamForm'
 import Organizations from './components/Organizations/Organizations'
 import Employees from './components/Employees/Employees'
 import Teams  from './components/Teams/Teams'
-import AssignEmployeeToTeam from './components/AssignEmployeeToTeam/AssignEmployeeToTeam'
+import AssignEmployeeToTeamForm from './components/AssignEmployeeToTeamForm/AssignEmployeeToTeamForm'
+import EmployeeToTeamList from './components/EmployeeToTeamList/EmployeeToTeamList'
 
 const App = () => {
   return (
@@ -19,10 +20,11 @@ const App = () => {
       <Route path='/organizationForm' element={<OrganizationForm/>}/>
       <Route path='/employeeform' element={<EmployeeForm/>}/>
       <Route path='/TeamForm' element={<TeamForm/>}/>
+      <Route path='/assignEmployeeToTeamForm' element={<AssignEmployeeToTeamForm/>}/>
       <Route path='/teams' element={<Teams/>}/>
       <Route path='/employees' element={<Employees/>}/>
       <Route path='/organizations' element={<Organizations/>}/>
-      <Route path='/assignEmployeeToTeam' element={<AssignEmployeeToTeam/>}/>
+      <Route path='/employeeToTeamList' element={<EmployeeToTeamList/>}/>
       <Route path="*" element={<Navigate to="/login" replace />} />
     </Routes>
 
