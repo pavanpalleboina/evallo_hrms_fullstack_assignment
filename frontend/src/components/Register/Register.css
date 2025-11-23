@@ -1,0 +1,66 @@
+.form-container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form{
+  width: 100%;
+  max-width:350px;
+  text-align: center;
+  border: 1px solid rgba(209, 213, 219, 0.6); /* border-gray-300/60 */
+  border-radius: 1rem; /* rounded-2xl */
+  padding: 0 2rem; /* px-8 */
+  background-color: white;
+  margin-top: 2.5rem; /* mt-10 */
+}
+h1 {
+  font-size:25px;
+  font-weight: 700;
+  color:#000000;
+  text-align: center;
+  margin-bottom: 24px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  user-select: none;
+  letter-spacing: 1px;
+}
+
+.input-field {
+  margin-top: 1.5rem; /* mt-6 */
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background-color: white;
+  border: 1px solid rgba(209, 213, 219, 0.8);
+  height: 3rem; 
+  border-radius: 9999px;
+  overflow: hidden;
+  padding-left: 1.5rem;
+  gap: 0.5rem;
+  outline: none;
+}
+
+
+.buttons-container{
+display: flex;
+align-items: center;
+justify-content: space-between;
+width:100%;
+
+}
+
+.sign-button {
+  margin-top: 0.5rem; /* mt-2 */
+  width: 100%;
+  height: 2.75rem; /* h-11 */
+  border-radius: 9999px;
+  color: white;
+  background-color: #6366f1; /* bg-indigo-500 */
+  font-weight: 500;
+  cursor: pointer;
+  transition: opacity 0.15s ease;
+  border: none;
+  margin-left: 10px;
+  
+}

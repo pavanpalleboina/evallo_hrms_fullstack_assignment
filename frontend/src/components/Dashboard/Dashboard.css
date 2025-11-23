@@ -1,0 +1,106 @@
+/* Main container */
+.container {
+  max-width: 960px;
+  margin: 50px auto 60px;
+  padding: 0 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #2c3e50;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.logout {
+  background-color: #ef4444;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.logout:hover {
+  background-color: #dc2626;
+}
+
+/* Cards container with gap and wrap */
+.cards-container {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Card styles */
+.card {
+  flex: 1 1 280px;
+  background: linear-gradient(135deg, #4f46e5, #4338ca);
+  border-radius: 18px;
+  color: white;
+  padding: 30px 20px;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 0 8px 20px rgba(79,70,229,0.35);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  user-select: none;
+}
+
+.card:hover,
+.card.active {
+  transform: translateY(-10px);
+  box-shadow: 0 14px 32px rgba(79,70,229,0.55);
+}
+
+/* Card number */
+.card-number {
+  font-size: 4.5rem;
+  font-weight: 900;
+  margin: 0 0 12px;
+  font-family: 'Segoe UI Black', 'Arial Black', sans-serif;
+}
+
+/* Card label */
+.card-label {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* Join Teams Button */
+button {
+  margin-top: 48px;
+  width: 100%;
+  max-width: 300px;
+  display: block;
+  padding: 18px 0;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: white;
+  background-color: #4f46e5;
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  box-shadow: 0 8px 25px rgba(79,70,229,0.45);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  user-select: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+button:hover {
+  background-color: #4338ca;
+  box-shadow: 0 12px 35px rgba(79,70,229,0.65);
+}
